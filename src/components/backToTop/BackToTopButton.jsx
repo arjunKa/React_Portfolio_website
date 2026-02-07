@@ -1,45 +1,33 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
-import './backToTopButton.css'
+import React, { useEffect, useState } from 'react';
+import './backToTopButton.css';
 
 const BackToTopButton = () => {
+  const [backToTop, setBackToTop] = useState(false);
 
-    const [backToTop, setBackToTop] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      setBackToTop(window.scrollY > 100);
+    };
 
-    useEffect(() => {
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 100)
-                setBackToTop(true);
-            else
-                setBackToTop(false);
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
 
-        })
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
-    }, [])
+  const scrollUp = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
-    const scrollUp = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
+  return (
+    <div className="backToTop_button">
+      {backToTop && (
+        <button id="scrollUp" onClick={scrollUp} type="button">
+          ^
+        </button>
+      )}
+    </div>
+  );
+};
 
-        })
-
-    }
-
-    return (
-        <div className='backToTop_button'>
-
-            {
-                backToTop && (
-                    <button id="scrollUp" onClick={scrollUp}>
-                        ^</button>
-
-
-                )
-            }
-
-        </div>
-    )
-}
-
-export default BackToTopButton
+export default BackToTopButton;

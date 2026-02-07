@@ -1,13 +1,36 @@
-import React from "react";
-import "./projectDetails.css";
+import React from 'react';
+import './projectDetails.css';
 import {
   Project,
   Project1,
   Project2,
   Project3,
   Project4,
-  Project5, Project6
-} from "../../components/project";
+  Project5,
+  Project6,
+} from '../../components/project';
+
+const projects = [
+  { id: 'EcoLearn', Component: Project6, header: 'EcoLearn' },
+  {
+    id: '3D_GPS',
+    Component: Project,
+    header: '3D GPS Software for Emergency Responders',
+  },
+  { id: 'CVHelper', Component: Project4, header: 'Resume Helper' },
+  {
+    id: 'HealthApp',
+    Component: Project5,
+    header: 'C++ Health & Fitness App',
+  },
+  { id: 'CoronaCast', Component: Project1, header: 'CoronaCast' },
+  { id: 'PortfolioSite', Component: Project2, header: 'React.js Portfolio Site' },
+  {
+    id: 'DetectiveDom',
+    Component: Project3,
+    header: 'Game: Detective Dom (Java)',
+  },
+];
 
 const ProjectDetails = () => {
   return (
@@ -20,27 +43,11 @@ const ProjectDetails = () => {
       </div>
 
       <div className="portfolio__projectDetails-container_group">
-      <div id="EcoLearn">
-          <Project6 date="" header="EcoLearn" />
-        </div>
-        <div id="3D_GPS">
-          <Project date="" header="3D GPS Software for Emergency Responders" />
-        </div>
-        <div id="CVHelper">
-          <Project4 date="" header="Resume Helper" />
-        </div>
-        <div id="HealthApp">
-          <Project5 date="" header="C++ Health & Fitness App" />
-        </div>
-        <div id="CoronaCast">
-          <Project1 date="" header="CoronaCast" />
-        </div>
-        <div id="PortfolioSite">
-          <Project2 date="" header="React.js Portfolio Site" />
-        </div>
-        <div id="DetectiveDom">
-          <Project3 date="" header="Game: Detective Dom (Java)" />
-        </div>
+        {projects.map(({ id, Component, header }) => (
+          <div id={id} key={id}>
+            <Component date="" header={header} />
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -132,6 +132,14 @@
 }
 
 
+.portfolio__project-container-content-text ul a {
+    color: blue;
+    text-decoration: underline;
+}
+
+
+
+
 .portfolio__project-container-content-logos {
     /* flex: 1; */
     display: flex;
