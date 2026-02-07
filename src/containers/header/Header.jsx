@@ -8,9 +8,9 @@ const Header = () => {
         <p className="portfolio__eyebrow">Software Engineer</p>
         <h1 className="gradient__text">Hi, I'm Arjun</h1>
         <p className="portfolio__header-lead">
-          I build reliable, user-focused software with Python, C++, React.js,
-          ASP.Net, and Java. Below are selected projects that show how I design,
-          ship, and iterate.
+          Full-stack engineer with backend and IaC depth. I design clean, layered
+          systems and ship microservices in languages such as C#, Java, Python, alongside modern frontend
+          work.
         </p>
 
         <div className="portfolio__header-actions">
