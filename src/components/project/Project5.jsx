@@ -17,25 +17,26 @@ const Project5 = ({ date, header }) => (
             <img src={cppIcon} alt="C++ logo" />
           </div>
 
-          <div className="portfolio__blog-container_article-content_options">
+          <div className="portfolio__project-actions">
             <a
               href="https://github.com/arjunKa/HealthApp"
               target="_blank"
               rel="noreferrer noopener"
+              className="button"
             >
-              <div className="button">GitHub</div>
+              GitHub
             </a>
           </div>
 
           <p>
-            A C++ console app with a saving feature to allow users to store
-            their biometric data, calorie and fitness progress. The user data
-            is then used to form simple calculations and predictions for the
-            user such as their BMI and more complicated ones such as estimated
-            calorie intake to help in weight gain or weight loss. JSON is used
-            to save and retrieve user data and resume progress such as calorie
-            tracking across days. C++ is ideal for JSON data retrieval and
-            permits control over the storage of the user data.
+            A C++ console app with a saving feature to allow users to store their
+            biometric data, calorie and fitness progress. The user data is then used
+            to form simple calculations and predictions for the user such as their
+            BMI and more complicated ones such as estimated calorie intake to help
+            in weight gain or weight loss. JSON is used to save and retrieve user
+            data and resume progress such as calorie tracking across days. C++ is
+            ideal for JSON data retrieval and permits control over the storage of
+            the user data.
           </p>
         </div>
 

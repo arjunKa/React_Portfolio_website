@@ -1,96 +1,61 @@
 .portfolio__footer {
-  padding-bottom: 40px;
-  margin: auto;
-  width: 50%;
-  max-width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 5rem;
 }
 
 .portfolio__footer_header {
-  padding: 20px 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
 }
 
 .portfolio__footer-content {
   text-align: center;
-  flex-wrap: wrap;
-  justify-items: center;
-  justify-content: center;
-}
-
-.portfolio__footer-content h1 {
-  padding: 20px 0;
-  font-size: 40px;
-  line-height: 75px;
-  font-family: var(--font-family);
-  font-weight: 600;
-  color: var(--color-text);
-}
-
-.portfolio__footer-content h2 {
-  padding: 20px 0;
-  font-size: 30px;
-  line-height: 75px;
-  font-family: var(--font-family);
-  font-weight: 400;
-  color: var(--color-text);
-}
-
-.portfolio__contact-container {
-  width: 400px;
-  height: 200px;
-  border-radius: 5px;
-  flex-wrap: wrap;
-  justify-items: center;
-  justify-content: center;
-  background: var(--color-main);
-  border: 2px solid transparent;
-  transition: 0.15s;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.portfolio__contact-container p {
-  font-family: var(--font-family);
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  color: rgb(0, 144, 222);
-}
-
-.portfolio__contact-container:hover {
-  border: 2px solid #727272;
 }
 
 .portfolio__footer-content-contacts {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.portfolio__contact-card {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 30px;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-@media screen and (max-width: 1100px) {
-  .portfolio__footer-content h1 {
-    font-size: 34px;
-  }
-
-  .portfolio__footer-content h2 {
-    font-size: 22px;
-  }
+.portfolio__contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
 }
 
-@media screen and (max-width: 700px) {
-  .portfolio__footer-content-contacts {
-    flex-direction: column;
-  }
+.portfolio__contact-label {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 11px;
+  font-weight: 700;
+  color: #6b7280;
+}
 
-  .portfolio__contact-container {
-    max-width: 100%;
-    height: 150px;
-  }
+.portfolio__contact-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+}
 
-  .portfolio__footer-content h1 {
-    font-size: 34px;
-  }
-
-  .portfolio__footer-content h2 {
-    font-size: 22px;
+@media screen and (max-width: 600px) {
+  .portfolio__footer_header {
+    font-size: 30px;
   }
 }

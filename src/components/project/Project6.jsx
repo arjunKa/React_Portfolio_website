@@ -19,31 +19,32 @@ const Project6 = ({ date, header }) => (
             <img src={reactIcon} alt="React logo" />
           </div>
 
-          <div className="portfolio__blog-container_article-content_options">
+          <div className="portfolio__project-actions">
             <a
               href="https://github.com/arjunKa/EcoLearning"
               target="_blank"
               rel="noreferrer noopener"
+              className="button button--ghost"
             >
-              <div className="button">GitHub</div>
+              GitHub
             </a>
             <a
               href="https://www.ecolearn.ca"
               target="_blank"
               rel="noreferrer noopener"
+              className="button"
             >
-              <div className="button">Try it</div>
+              Try it
             </a>
           </div>
 
           <p>
-            A web app that lets you record your carbon reduction and quantify
-            your impact. This project was used by LSF to help students quantify
-            their impact on sustainability projects. A custom-made REST API was
-            built to call and retrieve all the data needed for the
-            calculations, and the data is based on research on carbon emissions
-            in Canada. The tools used are Django, React, PostgreSQL and Azure
-            for deployment.
+            A web app that lets you record your carbon reduction and quantify your
+            impact. This project was used by LSF to help students quantify their
+            impact on sustainability projects. A custom-made REST API was built to
+            call and retrieve all the data needed for the calculations, and the data
+            is based on research on carbon emissions in Canada. The tools used are
+            Django, React, PostgreSQL and Azure for deployment.
           </p>
         </div>
 

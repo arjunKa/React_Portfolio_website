@@ -3,39 +3,38 @@ import './footer.css';
 
 const Footer = () => {
   return (
-    <div className="portfolio__footer section__padding" id="contact">
+    <footer className="portfolio__footer section__padding" id="contact">
       <div className="portfolio__footer-content">
-        <h1 className="portfolio__footer_header">Contact</h1>
+        <p className="section__label">Contact</p>
+        <h2 className="portfolio__footer_header">Let's connect</h2>
+        <p className="section__subtext">Open to roles, collaborations, and feedback.</p>
+
         <div className="portfolio__footer-content-contacts">
-          <div className="portfolio__contact-container">
-            <h2>Email</h2>
-            <a href="mailto:arjkaura@outlook.com">
-              <p>arjkaura@outlook.com</p>
-            </a>
-          </div>
-          <div className="portfolio__contact-container">
-            <h2>GitHub</h2>
-            <a
-              target="_blank"
-              rel="noreferrer noopener"
-              href="https://github.com/arjunKa"
-            >
-              <p>arjunKa</p>
-            </a>
-          </div>
-          <div className="portfolio__contact-container">
-            <h2>LinkedIn</h2>
-            <a
-              target="_blank"
-              rel="noreferrer noopener"
-              href="https://www.linkedin.com/in/arjun-kaura/"
-            >
-              <p>arjun-kaura</p>
-            </a>
-          </div>
+          <a className="portfolio__contact-card" href="mailto:arjkaura@outlook.com">
+            <p className="portfolio__contact-label">Email</p>
+            <p className="portfolio__contact-value">arjkaura@outlook.com</p>
+          </a>
+          <a
+            className="portfolio__contact-card"
+            target="_blank"
+            rel="noreferrer noopener"
+            href="https://github.com/arjunKa"
+          >
+            <p className="portfolio__contact-label">GitHub</p>
+            <p className="portfolio__contact-value">arjunKa</p>
+          </a>
+          <a
+            className="portfolio__contact-card"
+            target="_blank"
+            rel="noreferrer noopener"
+            href="https://www.linkedin.com/in/arjun-kaura/"
+          >
+            <p className="portfolio__contact-label">LinkedIn</p>
+            <p className="portfolio__contact-value">arjun-kaura</p>
+          </a>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

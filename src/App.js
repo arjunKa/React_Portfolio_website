@@ -10,8 +10,15 @@ const App = () => (
       <Header />
     </div>
 
-    <ProjectList />
-    <ProjectDetails />
+    <main>
+      <section className="section__wrap" aria-labelledby="projects-title">
+        <ProjectList />
+      </section>
+
+      <section className="section__wrap section__alt" aria-labelledby="projects-detail-title">
+        <ProjectDetails />
+      </section>
+    </main>
 
     <div className="gradient__bg">
       <Footer />

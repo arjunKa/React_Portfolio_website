@@ -44,17 +44,16 @@ const ProjectList = () => {
   return (
     <div className="portfolio__projectList" id="projects">
       <div className="portfolio__projectList-heading">
-        <h1>Projects</h1>
+        <p className="section__label">Selected work</p>
+        <h2 id="projects-title">Projects</h2>
+        <p className="section__subtext">
+          A quick scan of highlights. Jump into details below for full context.
+        </p>
       </div>
       <div className="portfolio__projectList-container">
         <div className="portfolio__projectList-container_groupB">
           {projects.map(({ id, skills, text }) => (
-            <Card
-              key={id}
-              linkToProject={`#${id}`}
-              skills={skills}
-              text={text}
-            />
+            <Card key={id} linkToProject={`#${id}`} skills={skills} text={text} />
           ))}
         </div>
       </div>

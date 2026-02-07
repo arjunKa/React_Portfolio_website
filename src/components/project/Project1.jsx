@@ -21,20 +21,22 @@ const Project1 = ({ date, header }) => (
             <img src={js} alt="JavaScript logo" />
           </div>
 
-          <div className="portfolio__blog-container_article-content_options">
+          <div className="portfolio__project-actions">
             <a
               href="https://github.com/Ru-Hacks/Coronacast"
               target="_blank"
               rel="noreferrer noopener"
+              className="button button--ghost"
             >
-              <div className="button">GitHub</div>
+              GitHub
             </a>
             <a
               href="https://ru-hacks.github.io/Coronacast/index.html"
               target="_blank"
               rel="noreferrer noopener"
+              className="button"
             >
-              <div className="button">Try It</div>
+              Try It
             </a>
           </div>
 
@@ -42,12 +44,11 @@ const Project1 = ({ date, header }) => (
             Made during the RUhacks Hackathon, the purpose of this project is to
             provide the user an easy to understand determination of the risk of
             COVID-19 in their area. This project showcases the use of API
-            implementation and an HTML + CSS frontend. We take the user's
-            location and use the Google Maps API to determine the traffic
-            congestion in the area. We also take in data such as their age, date
-            of birth, and any immune deficiencies. Finally, WeatherAPI is used to
-            factor in elements such as humidity and wind to determine the overall
-            risk factor.
+            implementation and an HTML + CSS frontend. We take the user's location
+            and use the Google Maps API to determine the traffic congestion in the
+            area. We also take in data such as their age, date of birth, and any
+            immune deficiencies. Finally, WeatherAPI is used to factor in elements
+            such as humidity and wind to determine the overall risk factor.
           </p>
         </div>
 

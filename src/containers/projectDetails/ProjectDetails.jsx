@@ -34,12 +34,13 @@ const projects = [
 
 const ProjectDetails = () => {
   return (
-    <div
-      className="portfolio__projectDetails section__padding"
-      id="projectDetails"
-    >
+    <div className="portfolio__projectDetails" id="projectDetails">
       <div className="portfolio__projectDetails-heading">
-        <h1>Projects in Detail</h1>
+        <p className="section__label">Deep dive</p>
+        <h2 id="projects-detail-title">Projects in Detail</h2>
+        <p className="section__subtext">
+          Outcomes, tech stacks, and decisions behind each build.
+        </p>
       </div>
 
       <div className="portfolio__projectDetails-container_group">

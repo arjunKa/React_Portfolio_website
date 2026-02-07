@@ -4,12 +4,8 @@ import './navbar.css';
 
 const Menu = () => (
   <>
-    <p>
-      <a href="#projects">Projects</a>
-    </p>
-    <p>
-      <a href="#contact">Contact</a>
-    </p>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
   </>
 );
 
@@ -17,38 +13,31 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="gpt3__navbar">
-      <div className="gpt3__navbar-links">
-        <div className="gpt3__navbar-links_logo" />
-        <div className="gpt3__navbar-links_container">
-          <Menu />
-        </div>
+    <nav className="nav">
+      <div className="nav__brand">
+        <a href="#home" className="nav__logo">
+          Arjun Kaura
+        </a>
       </div>
 
-      <div className="gpt3__navbar-menu">
+      <div className="nav__links">
+        <Menu />
+      </div>
+
+      <div className="nav__menu">
         {toggleMenu ? (
-          <RiCloseLine
-            color="#000000"
-            size={27}
-            onClick={() => setToggleMenu(false)}
-          />
+          <RiCloseLine color="#000000" size={26} onClick={() => setToggleMenu(false)} />
         ) : (
-          <RiMenu3Line
-            color="#000000"
-            size={27}
-            onClick={() => setToggleMenu(true)}
-          />
+          <RiMenu3Line color="#000000" size={26} onClick={() => setToggleMenu(true)} />
         )}
 
         {toggleMenu && (
-          <div className="gpt3__navbar-menu_container scale-up-center">
-            <div className="gpt3__navbar-menu_container-links">
-              <Menu />
-            </div>
+          <div className="nav__dropdown scale-up-center">
+            <Menu />
           </div>
         )}
       </div>
-    </div>
+    </nav>
   );
 };
 

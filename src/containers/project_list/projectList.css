@@ -1,47 +1,36 @@
 .portfolio__projectList {
-  margin-top: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .portfolio__projectList-heading {
-  width: 100%;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 }
 
-.portfolio__projectList-heading h1 {
-  font-size: 50px;
-  line-height: 75px;
+.portfolio__projectList-heading h2 {
+  font-size: 40px;
+  line-height: 1.2;
   font-family: var(--font-family);
-  font-weight: 600;
-  color: var(--color-text);
+  font-weight: 700;
+  color: #111827;
 }
 
 .portfolio__projectList-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
 .portfolio__projectList-container_groupB {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
 }
 
-@media screen and (max-width: 700px) {
-  .portfolio__projectList-heading h1 {
-    font-size: 46px;
-    line-height: 52px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .portfolio__projectList-heading h1 {
-    font-size: 30px;
-    line-height: 42px;
-  }
-
-  .portfolio__projectList-container {
-    margin: auto;
-    width: 50%;
+@media screen and (max-width: 600px) {
+  .portfolio__projectList-heading h2 {
+    font-size: 32px;
   }
 }

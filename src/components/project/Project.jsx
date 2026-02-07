@@ -18,31 +18,32 @@ const Project = ({ date, header }) => (
             <img src={unity} alt="Unity logo" />
           </div>
 
-          <div className="portfolio__blog-container_article-content_options">
+          <div className="portfolio__project-actions">
             <a
               href="https://lassonde.yorku.ca/lassonde-robotics-professor-helps-local-high-school-students"
               target="_blank"
               rel="noreferrer noopener"
+              className="button button--ghost"
             >
-              <div className="button">Article</div>
+              Article
             </a>
             <a
               href="https://www.youtube.com/watch?v=h0Q62fK-7ZQ"
               target="_blank"
               rel="noreferrer noopener"
+              className="button"
             >
-              <div className="button">Demo</div>
+              Demo
             </a>
           </div>
 
           <p>
-            I worked in the VGR (Vision Graphics and Robotics) laboratory at
-            York University to develop a prototype of a 3D GPS software. The
-            software would be used by Emergency Medical Services to better
-            navigate the streets, and also featured a VR component with the
-            ability to use the software in VR. Unity game development software
-            and C# programming language were used. 3D models were built using
-            SketchUp.
+            I worked in the VGR (Vision Graphics and Robotics) laboratory at York
+            University to develop a prototype of a 3D GPS software. The software
+            would be used by Emergency Medical Services to better navigate the
+            streets, and also featured a VR component with the ability to use the
+            software in VR. Unity game development software and C# programming
+            language were used. 3D models were built using SketchUp.
           </p>
 
           <p>

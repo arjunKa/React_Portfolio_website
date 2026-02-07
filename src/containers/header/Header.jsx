@@ -3,35 +3,36 @@ import './header.css';
 
 const Header = () => {
   return (
-    <div className="portfolio__header section__padding" id="home">
+    <header className="portfolio__header section__padding" id="home">
       <div className="portfolio__header-content">
+        <p className="portfolio__eyebrow">Software Engineer</p>
         <h1 className="gradient__text">Hi, I'm Arjun</h1>
-        <div className="portfolio__header-content-details">
-          <p>
-            I'm a software engineer and developer with 2+ years experience. I
-            have used Python, C++, React.js, ASP.Net, Java and more in my
-            projects and work. Below are some projects I have worked on.
-          </p>
-        </div>
+        <p className="portfolio__header-lead">
+          I build reliable, user-focused software with Python, C++, React.js,
+          ASP.Net, and Java. Below are selected projects that show how I design,
+          ship, and iterate.
+        </p>
 
-        <div className="portfolio__blog-container_header-content_options">
+        <div className="portfolio__header-actions">
           <a
             href="https://github.com/arjunKa/"
             target="_blank"
             rel="noreferrer noopener"
+            className="button button--ghost"
           >
-            <div className="button">GitHub</div>
+            GitHub
           </a>
           <a
             href="https://www.linkedin.com/in/arjun-kaura/"
             target="_blank"
             rel="noreferrer noopener"
+            className="button"
           >
-            <div className="button">LinkedIn</div>
+            LinkedIn
           </a>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

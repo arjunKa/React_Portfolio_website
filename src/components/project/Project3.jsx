@@ -17,24 +17,25 @@ const Project3 = ({ date, header }) => (
             <img src={java} alt="Java logo" />
           </div>
 
-          <div className="portfolio__blog-container_article-content_options">
+          <div className="portfolio__project-actions">
             <a
               href="https://www.greenfoot.org/scenarios/25657"
               target="_blank"
               rel="noreferrer noopener"
+              className="button"
             >
-              <div className="button">Try It</div>
+              Try It
             </a>
           </div>
 
           <p>
-            This is a game demo using Java and the Greenfoot game engine
-            software to demonstrate a branching path style of game. It utilizes
-            JSON to store all these paths in the game and the dialogue options.
-            In the demo, you play as Detective Dom and must investigate a case
-            through the use of interrogation, clue-finding and looking for
-            correlations during your investigation. You collect evidence, more
-            questions and more suspects until you can find an answer.
+            This is a game demo using Java and the Greenfoot game engine software
+            to demonstrate a branching path style of game. It utilizes JSON to store
+            all these paths in the game and the dialogue options. In the demo, you
+            play as Detective Dom and must investigate a case through the use of
+            interrogation, clue-finding and looking for correlations during your
+            investigation. You collect evidence, more questions and more suspects
+            until you can find an answer.
           </p>
         </div>
 

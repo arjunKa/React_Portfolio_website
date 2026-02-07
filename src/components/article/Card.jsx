@@ -2,22 +2,20 @@ import React from 'react';
 import './card.css';
 
 const Card = ({ linkToProject, skills, text }) => (
-  <div className="portfolio__blog-container_article">
-    <div className="portfolio__blog-container_article-content">
-      <a href={linkToProject}>
+  <div className="portfolio__card">
+    <div className="portfolio__card-content">
+      <a href={linkToProject} className="portfolio__card-title">
         <h3>{text}</h3>
       </a>
 
-      <div className="skillsUsed">
-        <h4>Skills Used:</h4>
+      <div className="portfolio__card-skills">
+        <p className="portfolio__card-label">Skills</p>
         <p>{skills}</p>
       </div>
 
-      <div className="portfolio__blog-container_article-content_view-project">
-        <a href={linkToProject}>
-          <p>View Project</p>
-        </a>
-      </div>
+      <a href={linkToProject} className="portfolio__card-link">
+        View Project
+      </a>
     </div>
   </div>
 );

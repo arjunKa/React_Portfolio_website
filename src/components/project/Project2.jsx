@@ -23,24 +23,24 @@ const Project2 = ({ date, header }) => (
             <img src={css} alt="CSS logo" />
           </div>
 
-          <div className="portfolio__blog-container_article-content_options">
+          <div className="portfolio__project-actions">
             <a
               href="https://github.com/arjunKa/React_Portfolio_website"
               target="_blank"
               rel="noreferrer noopener"
+              className="button"
             >
-              <div className="button">GitHub</div>
+              GitHub
             </a>
           </div>
 
           <p>
-            This section describes this portfolio site! It was built using
-            React.js for the front-end and uses a clean and simple look while
-            also having multiple nice-to-have features for easy user experience
-            such as a responsive design which adapts to screen dimensions,
-            meaning that it is usable on mobile. This portfolio website evolves
-            and grows constantly as more projects and features are added; there
-            will be much more to add.
+            This section describes this portfolio site! It was built using React.js
+            for the front-end and uses a clean and simple look while also having
+            multiple nice-to-have features for easy user experience such as a
+            responsive design which adapts to screen dimensions, meaning that it is
+            usable on mobile. This portfolio website evolves and grows constantly as
+            more projects and features are added; there will be much more to add.
           </p>
         </div>
 
