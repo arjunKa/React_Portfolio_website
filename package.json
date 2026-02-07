@@ -1,5 +1,5 @@
 {
-  "homepage": ".",
+  "homepage": "https://arjunKa.github.io/React_Portfolio_website",
   "name": "React_Portfolio_website",
   "version": "0.1.0",
   "private": true,
@@ -24,7 +24,8 @@
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src --max-warnings=0"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "eslint": "^8.57.0",
     "gh-pages": "^5.0.0"
   }
 }

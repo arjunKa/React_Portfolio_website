@@ -1,93 +1,47 @@
 .portfolio__projectList {
-    /* display: flex;
-    flex-direction: column;      */
-     /* margin-left: 8rem;
-    margin-right: 8rem; */
-    margin-top: 2rem;
-
-    
+  margin-top: 2rem;
 }
 
 .portfolio__projectList-heading {
-    width: 100%;
-    text-align: center;
-
-    margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .portfolio__projectList-heading h1 {
-    font-size: 50px;
-    line-height: 75px;
-    font-family: var(--font-family);
-    font-weight: 600;
-    color: var(--color-text);
-    
+  font-size: 50px;
+  line-height: 75px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  color: var(--color-text);
 }
 
 .portfolio__projectList-container {
-    /* display: flex;
-    flex-direction: row; */
-    /* margin: auto;
-    width: 50%; */
-    display: flex;
-    flex-wrap: wrap;
-    
-    justify-content: center;
-    
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
 
 .portfolio__projectList-container_groupB {
-    display: flex;
-    flex-wrap: wrap;
-    /* grid-gap: 0.5rem; */
-
-    
-  
-
-}
-
-
-@media screen and (max-width: 1100px) {
-    .portfolio__projectList-container_groupB {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width: 990px) {
-
-
-
-    .portfolio__projectList-container_groupB {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 700px) {
-    .portfolio__projectList-container_groupB {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .portfolio__projectList-container_groupA .portfolio__projectList-container_article  {
-       width: 100%;
-    }
-
-    .portfolio__projectList-heading h1 {
-        font-size: 46px;
-        line-height: 52px;
-    }
+  .portfolio__projectList-heading h1 {
+    font-size: 46px;
+    line-height: 52px;
+  }
 }
 
 @media screen and (max-width: 550px) {
-    .portfolio__projectList-heading h1 {
-        font-size: 30px;
-        line-height: 42px;
-    }
+  .portfolio__projectList-heading h1 {
+    font-size: 30px;
+    line-height: 42px;
+  }
 
-    .portfolio__projectList-container {
-    margin:auto;
+  .portfolio__projectList-container {
+    margin: auto;
     width: 50%;
-    }
+  }
 }
