@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3059a2e5.css",
-    "main.js": "/static/js/main.49b500cf.js",
+    "main.css": "/static/css/main.914f5b1f.css",
+    "main.js": "/static/js/main.b94acc88.js",
     "static/js/787.5d06ac3c.chunk.js": "/static/js/787.5d06ac3c.chunk.js",
     "static/media/coronaCast2.png": "/static/media/coronaCast2.b907cf59f148e3e0fbe0.png",
     "static/media/3D_GPS.png": "/static/media/3D_GPS.7864523e62ea38baab5f.png",
@@ -20,12 +20,12 @@
     "static/media/html5.svg": "/static/media/html5.2b36cd2143b950115530edfde54f21ac.svg",
     "static/media/javascript.svg": "/static/media/javascript.e7363ab96f901afdeb86963dd6a44ce2.svg",
     "index.html": "/index.html",
-    "main.3059a2e5.css.map": "/static/css/main.3059a2e5.css.map",
-    "main.49b500cf.js.map": "/static/js/main.49b500cf.js.map",
+    "main.914f5b1f.css.map": "/static/css/main.914f5b1f.css.map",
+    "main.b94acc88.js.map": "/static/js/main.b94acc88.js.map",
     "787.5d06ac3c.chunk.js.map": "/static/js/787.5d06ac3c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3059a2e5.css",
-    "static/js/main.49b500cf.js"
+    "static/css/main.914f5b1f.css",
+    "static/js/main.b94acc88.js"
   ]
 }
