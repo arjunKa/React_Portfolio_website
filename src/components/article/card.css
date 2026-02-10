@@ -49,7 +49,7 @@
 }
 
 .portfolio__card-link::after {
-  content: '?';
+  content: '';
   transition: transform 0.2s ease;
 }
 

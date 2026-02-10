@@ -1,82 +1,86 @@
 import React from 'react';
 import './project.css';
-import projectImage from '../../assets/ProjectImages/3D_GPS.png';
-import csharp from '../../assets/icons/csharp.svg';
-import unity from '../../assets/icons/unity.svg';
 
-const Project = ({ date, header }) => (
-  <div className="portfolio__project-container">
-    <div className="portfolio__project-container-content">
-      {date ? <p>{date}</p> : null}
+const Project = ({ project }) => {
+  const {
+    header,
+    icons = [],
+    actions = [],
+    paragraphs = [],
+    extraLinksHeading,
+    extraLinks = [],
+    images = [],
+  } = project;
+  const hasImages = images.length > 0;
 
-      <div className="portfolio__project-container-content-image-and-text">
-        <div className="portfolio__project-container-content-text">
-          <h3>{header}</h3>
+  return (
+    <div className="portfolio__project-container">
+      <div className="portfolio__project-container-content">
+        <div
+          className={`portfolio__project-container-content-image-and-text${
+            hasImages ? '' : ' portfolio__project-container-content-image-and-text--text-only'
+          }`}
+        >
+          <div className="portfolio__project-container-content-text">
+            <h3>{header}</h3>
 
-          <div className="portfolio__project-container-content-logos">
-            <img src={csharp} alt="C# logo" />
-            <img src={unity} alt="Unity logo" />
+            {icons.length > 0 ? (
+              <div className="portfolio__project-container-content-logos">
+                {icons.map(({ src, alt }) => (
+                  <img key={alt} src={src} alt={alt} />
+                ))}
+              </div>
+            ) : null}
+
+            {actions.length > 0 ? (
+              <div className="portfolio__project-actions">
+                {actions.map(({ href, label, ghost }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className={ghost ? 'button button--ghost' : 'button'}
+                  >
+                    {label}
+                  </a>
+                ))}
+              </div>
+            ) : null}
+
+            {paragraphs.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+
+            {extraLinks.length > 0 ? (
+              <>
+                <p>
+                  <strong>{extraLinksHeading || 'Other Links:'}</strong>
+                </p>
+                <ul>
+                  {extraLinks.map(({ href, label }) => (
+                    <li key={label}>
+                      <a href={href} target="_blank" rel="noreferrer noopener">
+                        {label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            ) : null}
           </div>
 
-          <div className="portfolio__project-actions">
-            <a
-              href="https://lassonde.yorku.ca/lassonde-robotics-professor-helps-local-high-school-students"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="button button--ghost"
-            >
-              Article
-            </a>
-            <a
-              href="https://www.youtube.com/watch?v=h0Q62fK-7ZQ"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="button"
-            >
-              Demo
-            </a>
-          </div>
-
-          <p>
-            I worked in the VGR (Vision Graphics and Robotics) laboratory at York
-            University to develop a prototype of a 3D GPS software. The software
-            would be used by Emergency Medical Services to better navigate the
-            streets, and also featured a VR component with the ability to use the
-            software in VR. Unity game development software and C# programming
-            language were used. 3D models were built using SketchUp.
-          </p>
-
-          <p>
-            <strong>Other Links:</strong>
-          </p>
-          <ul>
-            <li>
-              <a
-                href="https://vgrserver.eecs.yorku.ca/~jenkin/papers/2017/icinco2017.pdf"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Autonomous Trail Following: Paper on "Autonomous Trail Following"
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://vgr.lab.yorku.ca/students/"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Vision Graphics and Robotics student alumni (includes my name)
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div className="portfolio__project-container-content-image">
-          <img src={projectImage} alt="3D GPS street view" />
+          {hasImages ? (
+            <div className="portfolio__project-container-content-image">
+              {images.map(({ src, alt, className }) => (
+                <img key={alt} src={src} alt={alt} className={className || ''} />
+              ))}
+            </div>
+          ) : null}
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Project;
