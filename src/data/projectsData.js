@@ -6,7 +6,7 @@ import detectiveDomImage from '../assets/ProjectImages/detectiveDom.jpg';
 import ecoLearnImage from '../assets/ProjectImages/EcoLearnAppImage.png';
 import healthAppImage from '../assets/ProjectImages/healthAppImage.png';
 import portfolioSiteImage from '../assets/ProjectImages/portfolioSite.png';
-import hackinalImage from '../assets/ProjectImages/hackinal.png';
+// import hackinalImage from '../assets/ProjectImages/hackinal.png';
 
 import cppIcon from '../assets/icons/cplusplus.svg';
 import csharpIcon from '../assets/icons/csharp.svg';
